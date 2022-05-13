@@ -5,7 +5,7 @@ namespace Src\Entity\Price;
 
 use Doctrine\ORM\Mapping as ORM;
 
-#[Entity
+#[Entity]
 #[Table('Prices')]
 class Price {
     #[Id]
