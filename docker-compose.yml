@@ -6,7 +6,7 @@ services:
     container_name: Server
     ports:
       - "90:90"
-    volumes:    
+    volumes:
       - ./Server:/var/www
     links:
       - app
@@ -16,7 +16,7 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - ${PWD}/server/:/var/www
+      - ./Server/:/var/www
     depends_on:
       - db
     links:
