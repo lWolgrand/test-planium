@@ -8,10 +8,9 @@ class PlanController extends BaseController
 
     public function post()
     {
-       
-        // $planService = new PlanService();
+        $planService = new PlanService($this->getPost());
         http_response_code(200);
-        echo json_encode(['proposal' => $this->getInput('plan_register')]);        
+        echo json_encode(["proposal" => $planService->createProposal()]);       
     } 
     
     public function get()
