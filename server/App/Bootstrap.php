@@ -2,6 +2,7 @@
 
 namespace App;
 
+
 /**
  * Class Boostrap
  *
@@ -19,13 +20,7 @@ class Bootstrap
     {
         $this->router = new Http\Router();
     }
-
-
-    public function run()
-    {
-        return $this->initRoutes();
-    }
-
+    
     /**
      * @return $this
      */
@@ -34,4 +29,10 @@ class Bootstrap
         $this->router->init();
         return $this;
     }
+
+    public function run()
+    {
+        return $this->initRoutes();
+    }
+    
 }

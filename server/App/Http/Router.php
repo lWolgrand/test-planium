@@ -1,10 +1,10 @@
 <?php
 
-namespace Src\Server\App\Http;
+namespace App\Http;
 
 class Router {
 
-    private const BASE_CONTROLLER_NAMESPACE = 'App\Http\Controller';
+    private const BASE_CONTROLLER_NAMESPACE = 'App\Http\Controllers';
 
     public function init(){ 
 
@@ -13,7 +13,7 @@ class Router {
         
         if(class_exists($controllerName)){
             $controller = new $controllerName;
-            if($controller instanceof \App\Http\Controller\BaseController){
+            if($controller instanceof \App\Http\Controllers\BaseController){
                 $method = mb_strtolower($_SERVER['REQUEST_METHOD']);
                 if(in_array($method, get_class_methods($controller))) {
                         return $controller->{$method}();

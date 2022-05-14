@@ -3,44 +3,18 @@ version: "3.3"
 services:
   nginx:
     image: nginx:1.17.8
-    container_name: Server
+    container_name: server
     ports:
-      - "90:90"
+      - "80:80"
     volumes:
-      - ./Server:/var/www
+      - ./config:/etc/nginx/conf.d
+      - ./server:/var/www
     links:
       - app
   app:
-    build: "./Server"
+    build: "./server"
     container_name: app
     ports:
       - "9000:9000"
     volumes:
-      - ./Server/:/var/www
-    depends_on:
-      - db
-    links:
-      - db
-
-  db:
-    image: postgres:10
-    environment:
-      POSTGRES_PASSWORD: root
-      POSTGRES_USER: root
-      POSTGRES_DB: Beneficiary
-    ports:
-      - "5432:5432"
-    volumes:
-      - pgdata:/var/lib/postgresql:z
-      - ${PWD}/Config/Db_script:/docker-entrypoint-initdb.d
-  adminer:
-    image: adminer
-    ports:
-      - "8080:8080"
-    depends_on:
-      - db
-    links:
-      - db
-
-volumes:
-  pgdata:  
+      - ./server/:/var/www

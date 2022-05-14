@@ -1,6 +1,6 @@
 {
     "name": "php/autoload",
-    "description": "Autoloading of PHP classes",
+    "description": "Teste Planium",
     "authors": [
         {
         "name": "Wolgrand Lopes",
@@ -8,11 +8,10 @@
     }], 
     "autoload": {
         "psr-4": {
-            "Src\\": "App/"        
+            "App\\": "App/"        
         }
     },
     "require": {
-        "php": ">=7.0",
-        "doctrine/orm": "2.12.2"
+        "php": ">=7.0"
     }       
 }
