@@ -31,7 +31,7 @@ class BaseController
          */
         protected function getPost(): array
         {
-            return $_POST;
+            return $_POST = json_decode(file_get_contents("php://input"), true);
         }
 
         /**
