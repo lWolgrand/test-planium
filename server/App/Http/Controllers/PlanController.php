@@ -1,19 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Services\PlanService;
 
 class PlanController extends BaseController
 {
 
+    public function post()
+    {
+       
+        // $planService = new PlanService();
+        http_response_code(200);
+        echo json_encode(['proposal' => $this->getInput('plan_register')]);        
+    } 
+    
     public function get()
     {
-        $plan = file_get_contents('App/Entity/plan.json');
-        $plan = json_decode($plan);
-        // echo json_encode($plan);
-        foreach($plan as $key => $value){
-           echo $value->registro . ' - ' . $value->nome . ' - ' . $value->codigo . PHP_EOL . ' <br> ';
-        }
-        
-    }    
+        http_response_code(200);
+        echo json_encode(['message' => 'Hello World!']);
+    }
 
 }

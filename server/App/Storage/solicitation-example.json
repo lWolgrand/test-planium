@@ -1,0 +1,34 @@
+{
+
+    "beneficiary_amount": 5,
+    "plan_register": "reg1",
+    "beneficiaries":[
+
+        {
+            "beneficiary_name": "Orion",
+            "beneficiary_age": "16"                                
+        },            
+        {
+            "beneficiary_name": "Gaia",
+            "beneficiary_age": "15"
+                            
+        },           
+        {
+            "beneficiary_name": "Mel",
+            "beneficiary_age": "30"
+                            
+        },           
+        {
+            "beneficiary_name": "Piratinha",
+            "beneficiary_age": "25"                             
+        },
+        {
+            "beneficiary_name": "Ursa",
+            "beneficiary_age": "16"                                
+        }          
+            
+        
+    ]
+    
+
+}

@@ -1,0 +1,33 @@
+{
+    "plan_name": "Basic",
+    "total_price": 500,
+    "price_per_beneficiary": [
+        {
+            "beneficiary_name": "Orion",
+            "beneficiary_age": "16",
+            "price": "100"                              
+        },            
+        {
+            "beneficiary_name": "Gaia",
+            "beneficiary_age": "15",
+            "price": "100"         
+                            
+        },           
+        {
+            "beneficiary_name": "Mel",
+            "beneficiary_age": "30",
+            "price": "100"         
+                            
+        },           
+        {
+            "beneficiary_name": "Piratinha",
+            "beneficiary_age": "25",
+            "price": "100"                                      
+        },
+        {
+            "beneficiary_name": "Ursa",
+            "beneficiary_age": "16",
+            "price": "100"                                         
+        }   
+    ]
+}
