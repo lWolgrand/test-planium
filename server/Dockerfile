@@ -15,5 +15,12 @@ COPY composer*.json ./
 COPY setup.sh ./
 
 RUN chmod +x setup.sh
+RUN chown -R www-data:www-data /var/www
+RUN chmod -R 777 /var/www
 
 ENTRYPOINT ["bash", "setup.sh" ]
+
+
+
+
+

@@ -24,7 +24,7 @@ class PlanService
 
     }
 
-    public function createProposal(): array
+    public function createProposal()
     {
         $proposal = [];
         $sol = $this->solicitation;
@@ -32,37 +32,60 @@ class PlanService
             return $plan["registro"] == $sol["plan_register"];
         });
         $plan = $plan[0];
+        
         $price = array_filter($this->prices,function($p) use ($sol,$plan): bool {
-            return $p["codigo"] = $plan["codigo"] && $p["minimo_vidas"] <= $sol["beneficiary_amount"];
+            return $p["codigo"] == $plan["codigo"] && $p["minimo_vidas"] <= $sol["beneficiary_amount"];
         });
         $proposal["plan_name"] = $plan["nome"];
-//        $proposal[] = explode();
+        $proposal = array_merge($proposal, $this->calcPrice($sol["beneficiaries"], end($price)));
+        $this->saveProposal($proposal);
 
-        return $this->calcPrice($sol["beneficiaries"], $price);
-
+        return $proposal;
     }
 
-    public function calcPrice($beneficiaries, $prices): array
-    {
-        $ben = array_map(function ($b) use ($prices){
-            $b["beneficiary_age"]*2;
-//           if( $b["beneficiary_age"] <= 17){
-//               $b["beneficiary_price"] = $prices["faixa1"];
-//           }else if ($b["beneficiary_age"] <= 40){
-//               $b["beneficiary_price"] = $prices["faixa2"];
-//           } else {
-//               $b["beneficiary_price"] = $prices["faixa3"];
-//           }
-        }, $beneficiaries);
-        $totalCalc = array_reduce($beneficiaries, function ($total, $b){
-            $total +=  $b["beneficiary_price"];
+    public function calcPrice($beneficiaries, $prices)
+    {        
+        $ben = array_map(function ($b) use ($prices)
+        {
+            $age = (int)$b["beneficiary_age"];            
+          if($age <= 17){
+              return array_merge($b, array("beneficiary_price" => $prices["faixa1"]));
+          }else if ($age <= 40){ 
+              return array_merge($b, array("beneficiary_price" => $prices["faixa2"]));
+          } 
+          return array_merge($b, array("beneficiary_price" => $prices["faixa3"]));
+        },$beneficiaries);        
+        $totalCalc = array_reduce($ben, function ($total, $b){
+            $total  +=  $b["beneficiary_price"];
             return $total;
-        });
-        return $beneficiaries;
-//        return [
-//            "total_price" =>$totalCalc,
-//            "beneficiaries" => $beneficiaries
-//        ];
+        });        
+        return [
+            "total_price" =>$totalCalc,
+            "beneficiaries" => $ben
+        ];       
     }
 
+    public function saveProposal($proposal)
+    {
+        $proposalTable = file_get_contents('App/Storage/proposal.json');
+        $proposals = json_decode($proposalTable, true);
+
+        $proposals["proposals"][] = $proposal;       
+        
+        file_put_contents('App/Storage/proposal.json', json_encode($proposals));
+        
+    }
 }
+
+
+
+
+
+
+
+
+
+// $file = fopen('App/Storage/proposal.json', 'x+');
+// fwrite($file, json_encode($proposal));
+// fclose($file);    
+

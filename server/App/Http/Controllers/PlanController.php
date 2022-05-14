@@ -7,9 +7,10 @@ class PlanController extends BaseController
 {
 
     public function post()
-    {
+    {   
         $planService = new PlanService($this->getPost());
-        http_response_code(200);
+        http_response_code(201);
+        header("Content-Type: application/json");
         echo json_encode(["proposal" => $planService->createProposal()]);       
     } 
     
