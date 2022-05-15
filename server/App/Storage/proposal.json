@@ -1,1 +1,207 @@
-{"proposals":[{"plan_name":"Bitix Customer Plano 1","total_price":49,"beneficiaries":[{"beneficiary_name":"Orion","beneficiary_age":"16","beneficiary_price":9},{"beneficiary_name":"Gaia","beneficiary_age":"15","beneficiary_price":9},{"beneficiary_name":"Mel","beneficiary_age":"30","beneficiary_price":11},{"beneficiary_name":"Piratinha","beneficiary_age":"25","beneficiary_price":11},{"beneficiary_name":"Ursa","beneficiary_age":"16","beneficiary_price":9}]},{"plan_name":"Bitix Customer Plano 1","total_price":49,"beneficiaries":[{"beneficiary_name":"Orion","beneficiary_age":"16","beneficiary_price":9},{"beneficiary_name":"Gaia","beneficiary_age":"15","beneficiary_price":9},{"beneficiary_name":"Mel","beneficiary_age":"30","beneficiary_price":11},{"beneficiary_name":"Piratinha","beneficiary_age":"25","beneficiary_price":11},{"beneficiary_name":"Ursa","beneficiary_age":"16","beneficiary_price":9}]},{"plan_name":"Bitix Customer Plano 1","total_price":49,"beneficiaries":[{"beneficiary_name":"Orion","beneficiary_age":"16","beneficiary_price":9},{"beneficiary_name":"Gaia","beneficiary_age":"15","beneficiary_price":9},{"beneficiary_name":"Mel","beneficiary_age":"30","beneficiary_price":11},{"beneficiary_name":"Piratinha","beneficiary_age":"25","beneficiary_price":11},{"beneficiary_name":"Ursa","beneficiary_age":"16","beneficiary_price":9}]},{"plan_name":"Bitix Customer Plano 1","total_price":49,"beneficiaries":[{"beneficiary_name":"Orion","beneficiary_age":"16","beneficiary_price":9},{"beneficiary_name":"Gaia","beneficiary_age":"15","beneficiary_price":9},{"beneficiary_name":"Mel","beneficiary_age":"30","beneficiary_price":11},{"beneficiary_name":"Piratinha","beneficiary_age":"25","beneficiary_price":11},{"beneficiary_name":"Ursa","beneficiary_age":"16","beneficiary_price":9}]},{"plan_name":"Bitix Customer Plano 1","total_price":49,"beneficiaries":[{"beneficiary_name":"Orion","beneficiary_age":"16","beneficiary_price":9},{"beneficiary_name":"Gaia","beneficiary_age":"15","beneficiary_price":9},{"beneficiary_name":"Mel","beneficiary_age":"30","beneficiary_price":11},{"beneficiary_name":"Piratinha","beneficiary_age":"25","beneficiary_price":11},{"beneficiary_name":"Ursa","beneficiary_age":"16","beneficiary_price":9}]},{"plan_name":"Bitix Customer Plano 1","total_price":49,"beneficiaries":[{"beneficiary_name":"Orion","beneficiary_age":"16","beneficiary_price":9},{"beneficiary_name":"Gaia","beneficiary_age":"15","beneficiary_price":9},{"beneficiary_name":"Mel","beneficiary_age":"30","beneficiary_price":11},{"beneficiary_name":"Piratinha","beneficiary_age":"25","beneficiary_price":11},{"beneficiary_name":"Ursa","beneficiary_age":"16","beneficiary_price":9}]}]}
+{
+    "proposals": [{
+        "plan_name": "Bitix Customer Plano 1",
+        "total_price": 49,
+        "beneficiaries": [{
+            "beneficiary_name": "Orion",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Gaia",
+            "beneficiary_age": "15",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Mel",
+            "beneficiary_age": "30",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Piratinha",
+            "beneficiary_age": "25",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Ursa",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }]
+    }, {
+        "plan_name": "Bitix Customer Plano 1",
+        "total_price": 49,
+        "beneficiaries": [{
+            "beneficiary_name": "Orion",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Gaia",
+            "beneficiary_age": "15",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Mel",
+            "beneficiary_age": "30",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Piratinha",
+            "beneficiary_age": "25",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Ursa",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }]
+    }, {
+        "plan_name": "Bitix Customer Plano 1",
+        "total_price": 49,
+        "beneficiaries": [{
+            "beneficiary_name": "Orion",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Gaia",
+            "beneficiary_age": "15",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Mel",
+            "beneficiary_age": "30",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Piratinha",
+            "beneficiary_age": "25",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Ursa",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }]
+    }, {
+        "plan_name": "Bitix Customer Plano 1",
+        "total_price": 49,
+        "beneficiaries": [{
+            "beneficiary_name": "Orion",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Gaia",
+            "beneficiary_age": "15",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Mel",
+            "beneficiary_age": "30",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Piratinha",
+            "beneficiary_age": "25",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Ursa",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }]
+    }, {
+        "plan_name": "Bitix Customer Plano 1",
+        "total_price": 49,
+        "beneficiaries": [{
+            "beneficiary_name": "Orion",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Gaia",
+            "beneficiary_age": "15",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Mel",
+            "beneficiary_age": "30",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Piratinha",
+            "beneficiary_age": "25",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Ursa",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }]
+    }, {
+        "plan_name": "Bitix Customer Plano 1",
+        "total_price": 49,
+        "beneficiaries": [{
+            "beneficiary_name": "Orion",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Gaia",
+            "beneficiary_age": "15",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "Mel",
+            "beneficiary_age": "30",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Piratinha",
+            "beneficiary_age": "25",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "Ursa",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }]
+    }, {
+        "plan_name": "Bitix Customer Plano 1",
+        "total_price": 27,
+        "beneficiaries": [{
+            "beneficiary_name": "Star",
+            "beneficiary_age": "44",
+            "beneficiary_price": 15
+        }, {
+            "beneficiary_name": "Exodus",
+            "beneficiary_age": "30",
+            "beneficiary_price": 12
+        }]
+    }, {
+        "plan_name": null,
+        "total_price": 0,
+        "beneficiaries": [{
+            "beneficiary_name": "Nautilus",
+            "beneficiary_age": "80",
+            "beneficiary_price": null
+        }, {
+            "beneficiary_name": "Singed",
+            "beneficiary_age": "25",
+            "beneficiary_price": null
+        }]
+    }, {
+        "plan_name": null,
+        "total_price": 0,
+        "beneficiaries": [{
+            "beneficiary_name": "Nautilus",
+            "beneficiary_age": "80",
+            "beneficiary_price": null
+        }, {
+            "beneficiary_name": "Singed",
+            "beneficiary_age": "25",
+            "beneficiary_price": null
+        }]
+    }, {
+        "plan_name": "Bitix Customer Plano 1",
+        "total_price": 49,
+        "beneficiaries": [{
+            "beneficiary_name": "aurelio",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "kameha",
+            "beneficiary_age": "15",
+            "beneficiary_price": 9
+        }, {
+            "beneficiary_name": "goku",
+            "beneficiary_age": "30",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "batata",
+            "beneficiary_age": "25",
+            "beneficiary_price": 11
+        }, {
+            "beneficiary_name": "camelo",
+            "beneficiary_age": "16",
+            "beneficiary_price": 9
+        }]
+    }]
+}
