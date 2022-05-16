@@ -27,14 +27,14 @@ class PlanService
     public function createProposal()
     {
         $proposal = [];
-        $sol = $this->solicitation;
+        $sol = $this->solicitation; 
+              
         $plan = array_filter($this->plans, function ($plan) use ($sol): bool {
             return $plan["registro"] == $sol["plan_register"];
-        });
-        $plan = $plan[0];
-        
+        });        
+        $plan = reset($plan);                 
         $price = array_filter($this->prices,function($p) use ($sol,$plan): bool {
-            return $p["codigo"] == $plan["codigo"] && $p["minimo_vidas"] <= $sol["beneficiary_amount"];
+            return (int)$p["codigo"] == (int)$plan["codigo"] && (int)$p["minimo_vidas"] <= (int)$sol["beneficiary_amount"];
         });
         $proposal["plan_name"] = $plan["nome"];
         $proposal = array_merge($proposal, $this->calcPrice($sol["beneficiaries"], end($price)));

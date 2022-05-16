@@ -1,5 +1,5 @@
 {
-    "plan_name": "Basic",
+    "plan_register": "reg1",
     "total_price": 500,
     "price_per_beneficiary": [
         {
